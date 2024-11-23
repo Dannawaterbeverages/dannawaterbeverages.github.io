@@ -1,0 +1,114 @@
+/* General and Layout Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #0056A8;
+    color: white;
+}
+
+/* Sections */
+section {
+    padding: 20px;
+}
+
+h2 {
+    color: #0056A8;
+}
+
+/* Products Section */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.product-item {
+    flex: 1 1 calc(30% - 40px);
+    text-align: center;
+    animation: fadeIn 2s;
+}
+
+.product-item img {
+    max-width: 100%;
+}
+
+.product-item h3 {
+    margin-top: 10px;
+    color: #0056A8;
+}
+
+/* Locations Section */
+.locations {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.locations div {
+    width: 30%;
+}
+
+.locations iframe {
+    width: 100%;
+    height: 200px;
+}
+
+/* News Section */
+.news-articles {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.news-item {
+    width: 48%;
+}
+
+.news-item h3 {
+    color: #0056A8;
+}
+
+ footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #002B5E;
+            color: white;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* WhatsApp Icon */
+        .whatsapp-icon {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            width: 60px;
+            height: 60px;
+        }
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
