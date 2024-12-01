@@ -283,7 +283,7 @@
 
         .locations {
             background-color: #004080; /* Blue background for the section */
-            padding: 40px 20px;
+            padding: 20px;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -296,6 +296,7 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             padding: 15px;
             max-width: 300px;
+            width: 100%;
             text-align: center;
         }
 
@@ -331,6 +332,31 @@
         .btn:hover {
             background-color: #004080; /* Blue on hover */
             color: #ffffff; /* White text on hover */
+        }
+
+        /* Media Query for smaller screens */
+        @media (max-width: 600px) {
+            h2 {
+                font-size: 1.5em; /* Slightly smaller heading on small screens */
+            }
+
+            .locations {
+                padding: 10px; /* Reduce padding for smaller screens */
+            }
+
+            .locations div {
+                padding: 10px; /* Reduce card padding */
+                max-width: 100%; /* Ensure the card takes full width */
+            }
+
+            .btn {
+                font-size: 12px; /* Smaller button font size */
+                padding: 8px 10px; /* Adjust button padding */
+            }
+
+            iframe {
+                height: 150px; /* Reduce map height */
+            }
         }
     </style>
 </head>
