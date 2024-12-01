@@ -16,33 +16,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <header style="position: relative; text-align: center; color: white; padding: 50px; background: url('img/l.jpg') no-repeat center center/cover; opacity: 0.8;">
-    <h1 style="font-size: 2.5em; animation: fadeIn 2.5s ease-in-out; color:darkblue; blue; background-color: white; display: inline-block; padding: 10px 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+<header style="position: relative; text-align: center; color: white; padding: 50px; background: url('img/l.jpg') no-repeat center center/cover;">
+    <h1 style="font-size: 2.5em; animation: fadeIn 2.5s ease-in-out; color: darkblue; background-color: white; display: inline-block; padding: 10px 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
         Danna Beverages
     </h1>
-   <header style="position: relative; text-align: center; color: white; padding: 50px; background: url('img/background.jpg') no-repeat center center/cover;">
-    <h1 style="font-size: 2.5em; animation: fadeIn 2.5s ease-in-out; color: blue; background-color: white; display: inline-block; padding: 10px 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+</header>
+
+<header style="position: relative; text-align: center; color: white; padding: 50px; background: url('img/background.jpg') no-repeat center center/cover;">
+    <h1 style="font-size: 2em; animation: fadeIn 2.5s ease-in-out; color: blue; background-color: white; display: inline-block; padding: 10px 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
         Quench Your Thirst
     </h1>
 </header>
 
-<style>
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-            transform: translateY(20px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-</style>
-
-    <h3>
-    <p></p>
-</h3>
-<h1 style="font-size: 2.5em; animation: fadeIn 1.5s ease-in-out, blink 10s infinite; animation-delay: 0s, 45s; color: white; background-color: blue; display: inline-block; padding: 10px 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+<h1 style="font-size: 2em; animation: fadeIn 1.5s ease-in-out, blink 10s infinite; animation-delay: 0s, 45s; color: white; background-color: blue; display: inline-block; padding: 10px 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
     We believe in delivering not just water, but a refreshing experience that supports our customers and community
 </h1>
 
@@ -63,31 +49,22 @@
             opacity: 0;
         }
     }
-</style>
 
-</header>
-
-<style>
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-            transform: translateY(20px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
     header {
         position: relative;
         color: white;
         text-align: center;
-        background-color: rgba(0, 0, 0, 0.5); /* Optional dark overlay */
+        padding: 50px;
+        background-color: rgba(0, 0, 0, 0.5); /* Optional dark overlay for fallback */
+        background-size: cover;
     }
+
     header h1 {
         margin: 0;
         padding: 10px;
+        font-size: 2.5em;
     }
+
     header::before {
         content: '';
         position: absolute;
@@ -95,11 +72,33 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: url('img/background.jpg') no-repeat center center/cover;
-        opacity: 0.3; /* Adjust for transparency */
-        z-index: -1; /* Place behind text */
+        background: inherit;
+        z-index: -1;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        header {
+            padding: 30px;
+        }
+
+        header h1 {
+            font-size: 1.8em;
+        }
+    }
+
+    @media (max-width: 480px) {
+        header {
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 1.5em;
+        }
     }
 </style>
+</body>
+
 
 
                                     
